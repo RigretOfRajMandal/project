@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Management System</title>
+<style>
+  h1{
+    text-align: center;
+  }
+  .hedur{
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+  }
+  #all data{
+    text-align: center;
+    height: 20px;
+    width: 1000px;
+  }
+  .t_hade{
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(93, 199, 199);
+    width: 30px;
+    height: 5px;
+  }
+  .table{
+    border-collapse: collapse;
+    margin: 30px;
+    font-size: 20px;
+    min-width: 1000px;
+    padding: 10px;
+  }
+  .select_page{
+    text-align: center;
+    padding: 2px;
+  }
+  
+   
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Employee Management System</h1>
+    <div class="hedur">
+        <select id="value option">
+          
+           <option value="">--Select Department--</option>
+            <option value="hr">HR</option>
+            <option value="finance">Finance</option>
+            <option value="marketing">Marketing</option>
+            <option value="engineering">Engineering</option>
+            <option value="operations">Operations</option>
+        </select>
+        <select id="gender">
+            <option value="">--Select Gender--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <select id="sortOrder">
+            <option value="">--Select Order--</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+    </div>
+    <table class="table">
+        <thead class="t_hade">
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="all data">
+           <tr>
+            <td>1</td>
+            <td>Benson</td>
+            <td>female</td>
+            <td>operations</td>
+            <td>25000</td>
+           </tr>
+           
+           <tr>
+            <td>2</td>
+            <td>Lorettalorna Rosenfarb</td>
+            <td>female</td>
+            <td>operations</td>
+            <td>25000</td>
+           </tr>
+           
+           <tr>
+            <td>3</td>
+            <td>Claudia Vasyukhin</td>
+            <td>female</td>
+            <td>hr</td>
+            <td>25000</td>
+           </tr>
+           
+           <tr>
+            <td>4</td>
+            <td>Brynn Wildblood</td>
+            <td>female</td>
+            <td>finance</td>
+            <td>27000</td>
+           </tr>
+           
+           <tr>
+            <td>5</td>
+            <td>Elli Godlip</td>
+            <td>female</td>
+            <td>hr</td>
+            <td>27000</td>
+           </tr>
+           
+           <tr>
+            <td>6</td>
+            <td>Rina Nasey</td>
+            <td>female</td>
+            <td>engineering</td>
+            <td>27000</td>
+           </tr>
+           
+           <tr>
+            <td>7</td>
+            <td>Tobi Pizer</td>
+            <td>female</td>
+            <td>operations</td>
+            <td>30000</td>
+           </tr>
+           <hr>
+           
+            <td>8</td>
+            <td>Iltssa Staning</td>
+            <td>female</td>
+            <td>operations</td>
+            <td>35000</td>
+           </tr>
+           
+           <tr>
+            <td>9</td>
+            <td>Monty Meers</td>
+            <td>female</td>
+            <td>engineering</td>
+            <td>35000</td>
+           </tr>
+           
+           <td>10</td>
+            <td>Courtenay Risborough</td>
+            <td>female</td>
+            <td>hr</td>
+            <td>35000</td>
+           </tr>
+           
+           
+        </tbody>
+    </table>
+    <div class="select_page">
+        <button id="prevPage" disabled>Previous</button>
+        <span id="pagenum">Page 1</span>
+        <button id="nextPage">Next</button>
+    </div>
+
+
+</body>
+</html>
